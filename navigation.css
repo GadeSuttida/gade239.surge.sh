@@ -1,0 +1,159 @@
+.nav {
+    width: 100%;
+    border-color: black;
+    text-align: center;
+}
+
+.nav .icon {
+    display: none;
+}
+
+ul {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+    background-color: #DCDCDC;
+}
+
+ul a {
+    float: left;
+    font-size: 16pt;
+    list-style: none;
+    display: block;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 0;
+    width: 20%;
+    text-align: center;
+    text-decoration: none;
+    color: #2F4F4F;
+}
+
+ul a:hover,
+ul a.selected,
+.dropdown:hover,
+.dropdown.selected {
+    background-color: #D3D3D3;
+}
+
+
+/* Dropdown */
+
+
+/* Dropdown container */
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+    width: 20%;
+}
+
+
+/* Style the dropdown button to fit inside the topnav */
+
+.dropdown .dropbtn {
+    font-size: 16pt;
+    border: none;
+    outline: none;
+    color: #2F4F4F;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+
+/* Style the dropdown content (hidden by default) */
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    width: 20%;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+
+/* Style the links inside the dropdown */
+
+.dropdown-content a {
+    float: none;
+    color: #2F4F4F;
+    padding: 5% 0 5% 5%;
+    text-decoration: none;
+    width: 95%;
+    display: block;
+    text-align: left;
+    font-size: 16pt;
+}
+
+
+/* Show the dropdown menu when the user moves the mouse over the dropdown button or user click the dropdown button (on mobile)*/
+
+.dropdown:hover .dropdown-content,
+.dropdown:focus .dropdown-content {
+    display: block;
+}
+
+@media screen and (max-width: 768px) {
+    .nav {
+        text-align: start;
+    }
+    .nav a:not(.first),
+    .nav .dropdown:not(.first) {
+        display: none;
+    }
+    .nav a.first {
+        width: unset;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+    .nav a.icon {
+        float: right;
+        display: block;
+    }
+    .nav.responsive {
+        position: relative;
+    }
+    .nav.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .nav.responsive a:not(.icon) {
+        width: 100%;
+        float: none;
+        display: block;
+        padding-left: 0;
+        text-align: center;
+    }
+    .nav.responsive .dropdown {
+        display: block;
+        width: 100%;
+        float: none;
+        padding-left: 0;
+    }
+    .nav.responsive .dropdown-content {
+        position: relative;
+        width: 100%;
+    }
+    .nav.responsive .dropdown-content a {
+        padding: 5% 0 5% 0;
+    }
+    .nav.responsive .dropdown .dropbtn {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 1024) {
+    .dropdown .dropbtn,
+    .dropdown-content a,
+    ul a {
+        font-size: 14pt;
+    }
+}

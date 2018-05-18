@@ -1,0 +1,40 @@
+/* All contents container box */
+
+.content {
+    background-color: #F5F5F5;
+    padding: 25px;
+    text-align: center;
+    /* min-height: 500px; */
+}
+
+
+/* Style each row of content to show image and text in different row at center */
+
+.row {
+    display: inline;
+}
+
+
+/* Style image and text of each row of content */
+
+.content-image {
+    float: none;
+    display: block;
+    width: 50%;
+    object-fit: contain;
+    margin: auto;
+}
+
+.content-title {
+    font-weight: bold;
+}
+
+.content-text {
+    font-size: 16pt;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+br {
+    font-size: 32pt;
+}

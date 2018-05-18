@@ -1,0 +1,20 @@
+@font-face {
+    font-family: Nitan;
+    src: url("../font/Nithan.ttf");
+}
+
+html,
+body {
+    padding: 0px;
+    margin: 0px;
+    height: 100%;
+    font-family: Nitan;
+}
+
+.header {
+    width: 100%;
+}
+
+.container {
+    height: 100%;
+}
